@@ -18,14 +18,14 @@ public class Airplane
     this("AAA01", 1, 0, 0);
   }
 
-  public void gainAlt()
+  public void gainAlt(int alt)
   {
-    altitude += 1000;
+    altitude += alt;
   }
 
-  public void loseAlt()
+  public void loseAlt(int alt)
   {
-    altitude -= 1000;
+    altitude -= alt;
     if (altitude < 0)
     {
       altitude = 0;
